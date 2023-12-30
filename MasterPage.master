@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Live View Page -  524 product admin Template</title>
+    <link rel="icon" href="https://templatemo.com/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav>
+            <header>
+                <h1>Product Admin</h1>
+                <div class="header">
+                    <a href="Dashboard.aspx" class="active"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                    <a href="Products.aspx"><i class="fas fa-shopping-cart"></i>Products</a>
+                    <a href="Accounts.aspx"><i class="far fa-user"></i>Accounts</a>
+                </div>
+            </header>
+        </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <center>Copyright © <b>2018</b> All rights reserved. Design: Template Mo</center>
+        </footer>
+    </form>
+</body>
+</html>
